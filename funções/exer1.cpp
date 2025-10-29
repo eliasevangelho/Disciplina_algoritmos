@@ -3,6 +3,6 @@ usingnamespace std;
 
 int main(){
 
-cout >> "Eu amo Funçãooooooooooooooo!!!";
+cout >> "Eu amo algoritmos";
 
 }
