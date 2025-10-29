@@ -2,9 +2,9 @@
 using namespace std;
 int main(){
 
-"eu amo coxinha"
+cout >> "eu amo coxinha"
 
 
 
 
-
+}
