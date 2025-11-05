@@ -11,30 +11,6 @@ return num;
 }
 
 
-//Faça um programa simples de adivinhação numérica;
-// O programa terá, no máximo, 3 tentativas. Se não acertar, a humanidade ganha. Se acertar, as máquinas ganham;
-// A cada tentativa o usuário deve informar se o palpite é certo, maior ou menor que o número pensado;
-
-//Use a função le_numero para ler um número entre 1 e 10 com a mensagem conforme exemplo;
-
-
-// No main, deve criar um laço de repetição (while) que executará até que o número seja adivinhado ou até exceder o número de tentativas.
-
-// Tente organizar seu código em funções
-
-// Exemplo:
-// Digite o número a ser adivinhado entre 1 e 10
-// 9
-// Seu número é o 2, maior ou menor?
-// maior
-// Seu número é o 3, maior ou menor?
-// maior
-// Seu número é o 9, maior ou menor?
-// sim
-// AS MÁQUINAS VENCERAM
-
-//
-
 int main(){
 
     int principal;
@@ -73,3 +49,27 @@ int main(){
     }
 
 }
+
+//Faça um programa simples de adivinhação numérica;
+// O programa terá, no máximo, 3 tentativas. Se não acertar, a humanidade ganha. Se acertar, as máquinas ganham;
+// A cada tentativa o usuário deve informar se o palpite é certo, maior ou menor que o número pensado;
+
+//Use a função le_numero para ler um número entre 1 e 10 com a mensagem conforme exemplo;
+
+
+// No main, deve criar um laço de repetição (while) que executará até que o número seja adivinhado ou até exceder o número de tentativas.
+
+// Tente organizar seu código em funções
+
+// Exemplo:
+// Digite o número a ser adivinhado entre 1 e 10
+// 9
+// Seu número é o 2, maior ou menor?
+// maior
+// Seu número é o 3, maior ou menor?
+// maior
+// Seu número é o 9, maior ou menor?
+// sim
+// AS MÁQUINAS VENCERAM
+
+//
