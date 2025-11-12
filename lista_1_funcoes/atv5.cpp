@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// EXERCÍCIO: Complete o código e os parâmetros da FUNÇÃO mostrar_pessoa QUE RECEBE NOME E CIDADE DO ALUNO 
+// EXERCÍCIO: Complete o código e os parâmetros da FUNÇÃO mostrar_pessoa QUE RECEBE NOME E CIDADE DO ALUNO
 // E IMPRIME UMA MENSAGEM APRESENTANDO-O.
 // NO main, CHAME A FUNÇÃO PARA 3 ALUNOS.
 
-void mostrar_pessoa(string nome, string cidade);
+void mostrar_pessoa(string nome, string cidade){
+	cout << "O aluno(a) " << nome << " mora em " << cidade << endl;
+}
 
 int main(){
     mostrar_pessoa("Fernando", "Curitiba");
@@ -13,7 +15,4 @@ int main(){
     mostrar_pessoa("Eduarda", "Pinhais");
 }
 
-void mostrar_pessoa( // complete os parâmetros ){
-	//complete o código
-}
 
