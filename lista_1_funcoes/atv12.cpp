@@ -9,12 +9,38 @@ using namespace std;
 // - 60-69: D
 // - <60  : F
 // NO main, LEIA A NOTA E IMPRIMA O CONCEITO.
+int le_numero(string msg){
+int num;
+cout << msg << endl;
+cin >> num;
 
+return num;
 
+}
+
+char classificar_nota(int a){
+if(a > 90){
+    return 'A';
+}
+else if(a >= 80 && a <= 89){
+    return 'B';
+}
+else if(a >= 70 && a <= 79){
+    return 'C';
+}
+else if(a >= 60 && a <= 69){
+    return 'D';
+}
+
+else{
+    return 'F';
+}
+
+}
 
 int main(){
     int n;
-	// leia a nota com a função le_numero
+	n = le_numero("Digite sua nota: ");
 
     cout << "Conceito: " << classificar_nota(n) << endl;
 }

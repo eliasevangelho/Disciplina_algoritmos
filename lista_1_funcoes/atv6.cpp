@@ -1,7 +1,18 @@
 #include <iostream>
 using namespace std;
 
-double le_numero_double(double a, double b, double c){
+
+
+double le_numero(string msg){
+int num;
+cout << msg << endl;
+cin >> num;
+
+return num;
+
+}
+
+double calcular_media3(double a, double b, double c){
     int resul = (a + b + c) / 3;
     return resul;
 
@@ -10,11 +21,11 @@ double le_numero_double(double a, double b, double c){
 
 int main(){
     double a, b, c;
-    a = le_numero_double(50,100,10);
-    b = le_numero_double(40,26,70);
-    c = le_numero_double(43,78,100);
+    a = le_numero("Digite um numero: ");
+    b = le_numero("Digite mais um numero: ");
+    c = le_numero("mais um: ");
 
-    cout << "Média: " << b+a+c/3 << endl;
+    cout << "A media eh: " << calcular_media3(a,b,c) << endl;
 }
 // EXERCÍCIO: CRIE UMA FUNÇÃO calcular_media3 QUE RECEBE 3 NOTAS (DOUBLE)
 // E RETORNA A MÉDIA ARITMÉTICA DAS NOTAS

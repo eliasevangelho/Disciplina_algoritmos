@@ -8,7 +8,7 @@ using namespace std;
 //
 // - Usar a função le_inteiro para ler um número informado pelo usuário.
 
-// - Chamar a função eh_par passando o número digitado. 
+// - Chamar a função eh_par passando o número digitado.
 // ** ATENÇÃO: PESQUISE NA INTERNET SOBRE O TIPO DE VARIÁVEL bool E COMO USÁ-LO NESTE CASO
 // O TIPO bool REPRESENTA VALORES verdadeiro (true) OU falso(false)
 
@@ -23,15 +23,30 @@ using namespace std;
 
 
 
+int le_numero(string msg){
+int num;
+cout << msg << endl;
+cin >> num;
+
+return num;
+
+}
+
+bool eh_par(int a){
+    return a % 2 == 0;
+
+}
+
+
 
 int main(){
 
-    int valor = le_numero("Digite um número: ");
+    int valor = le_numero("Digite um numero: ");
 
     if(eh_par(valor)){
-        cout << "É par." << endl;
+        cout << "Eh par." << endl;
     }else{
-        cout << "É ímpar." << endl;
+        cout << "Eh impar." << endl;
     }
 }
 
