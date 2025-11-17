@@ -12,8 +12,6 @@ void dobra_vetor(int vetor[], int num){
         vetor[i] = vetor[i] * 2;
 
     }
-
-
 }
 
 int main(){
@@ -35,13 +33,5 @@ int main(){
         cout << vet_numeros[i] << " ";
     }
     cout << endl;
-
-
-
-
-
-
-
-
 
 }
