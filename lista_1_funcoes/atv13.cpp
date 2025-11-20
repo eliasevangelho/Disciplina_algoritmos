@@ -44,9 +44,9 @@ int main(){
     int valor = le_numero("Digite um numero: ");
 
     if(eh_par(valor)){
-        cout << "Eh par." << endl;
+        cout << "Eh par, meus bacanos" << endl;
     }else{
-        cout << "Eh impar." << endl;
+        cout << "Eh impar, meus bacanos" << endl;
     }
 }
 
