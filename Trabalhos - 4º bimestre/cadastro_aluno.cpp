@@ -9,19 +9,20 @@ struct aluno{
     string telefone;
 };
 
-void imprimir_informacoes(string msg, aluno a){
-    cout << msg << endl;
+void imprimir_informacoes(string msg, aluno a,int num){
+    cout << msg << num+1 << ":" << endl;
     cout << "Matricula: " << a.matricula << endl;
     cout << "Nome: " << a.nome << endl;
     cout << "Curso: " << a.curso << endl;
     cout << "CPF: " << a.cpf << endl;
-    cout << "Telefone: " << a.telefone << endl;
+    cout << "Telefone: " << a.telefone << endl << endl;
 
 
 
 }
 
-aluno ler_informacoes(string msg, aluno a){
+aluno ler_informacoes(string msg){
+    aluno a;
     cout << msg << endl << endl << "Digite sua matricula: " << endl;
     cin >> a.matricula;
     cout << "Digite seu nome: " << endl;
@@ -40,8 +41,22 @@ aluno ler_informacoes(string msg, aluno a){
 
 
 int main(){
-    struct aluno informacoes;
+    int alunos;
+    
+    cout << "Quantos alunos serao cadastrados?: ";
+    cin >> alunos;
 
-    informacoes = ler_informacoes("Digite suas informacoes no sistema!!", informacoes);
-    imprimir_informacoes("AS INFORMACOES SAO:", informacoes);
-}
+    aluno vet_alunos[alunos];
+    int cont = 0;
+
+    while(alunos > cont){
+    vet_alunos[cont] = ler_informacoes("Digite as informacoes do aluno no sistema!!");
+    cont ++;
+        }
+
+    for(int i = 0; i < alunos; i++){
+    imprimir_informacoes("AS INFORMACOES DO ALUNO ", vet_alunos[i], i);
+
+
+        }
+    }
